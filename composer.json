@@ -1,0 +1,50 @@
+{
+    "name": "NtimYeboah/laravel-glare",
+    "description": "A package to show insights into your cache",
+    "keywords": [
+        "NtimYeboahh",
+        "laravel-glare"
+    ],
+    "homepage": "https://github.com/NtimYeboah/laravel-glare",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NtimYeboah",
+            "email": "ntimobedyeboah@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "laravel/framework": "5.5.*"
+    },
+    
+    "autoload": {
+        "psr-4": {
+            "NtimYeboah\\LaravelGlare\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NtimYeboah\\LaravelGlare\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NtimYeboah\\LaravelGlare\\LaravelGlareServiceProvider"
+            ],
+            "aliases": {
+                "Skeleton": "NtimYeboah\\LaravelGlare\\LaravelGlareFacade"
+            }
+        }
+    }
+}
